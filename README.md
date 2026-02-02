@@ -6,7 +6,7 @@
 - **Mã sinh viên:** 2451261013  
 - **Lớp:** 66TTNT1  
 
-## 🎓 Môn học: CSE391 – Công nghệ Web
+## 🎓 Môn học: CSE391 – Nền Tảng Phát Triển Web
 
 CSE391 là môn học cung cấp các kiến thức nền tảng và thực hành về **công nghệ phát triển Web**, bao gồm:
 - HTML, CSS, JavaScript  
