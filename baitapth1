@@ -1,0 +1,9 @@
+git config --global user.name "Nguyen Viet Hung"
+git config --global user.email "hungpr17092k6@gmail.com"
+git clone https://github.com/lilEdgar2108/2026_CSE391_66TTNT1_NguyenVietHung.git
+cd 2026_CSE391_66TTNT1_NguyenVietHung
+echo "Hello World - Bai tap dau tien" > baitapth1.txt
+git add .
+git commit -m "Commit bai tap 1: Tao file baitapth1.txt"
+git push
+git pull
