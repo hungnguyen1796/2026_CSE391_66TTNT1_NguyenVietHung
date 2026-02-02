@@ -1,6 +1,6 @@
 git config --global user.name "Nguyen Viet Hung"
 git config --global user.email "hungpr17092k6@gmail.com"
-git clone https://github.com/hungnguyen1796/2026_CSE391_66TTNT1_NguyenVietHung
+git clone https://github.com/hungnguyen1796/2026_CSE391_66TTNT1_NguyenVietHung.git
 cd 2026_CSE391_66TTNT1_NguyenVietHung
 echo "Hello World - Bai tap dau tien" > baitapth1.txt
 git add .
