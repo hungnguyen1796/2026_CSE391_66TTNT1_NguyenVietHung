@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài tập 04</title>
+</head>
+
+<body>
+<h3>BÀI TẬP 04 – FORM</h3>
+
+<form action="#" method="post">
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <td>Họ và tên</td>
+      <td><input type="text" name="fullname"></td>
+    </tr>
+
+    <tr>
+      <td>Email</td>
+      <td><input type="email" name="email"></td>
+    </tr>
+
+    <tr>
+      <td>Mật khẩu</td>
+      <td><input type="password" name="password"></td>
+    </tr>
+
+    <tr>
+      <td>Giới tính</td>
+      <td>
+        <input type="radio" name="gender" value="Nam"> Nam
+        <input type="radio" name="gender" value="Nữ"> Nữ
+      </td>
+    </tr>
+
+    <tr>
+      <td>Sở thích</td>
+      <td>
+        <input type="checkbox" name="hobby" value="Code"> Code
+        <input type="checkbox" name="hobby" value="Game"> Game
+        <input type="checkbox" name="hobby" value="Music"> Music
+      </td>
+    </tr>
+
+    <tr>
+      <td>Quê quán</td>
+      <td>
+        <select name="city">
+          <option>Hà Nội</option>
+          <option>TP.HCM</option>
+          <option>Đà Nẵng</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Ghi chú</td>
+      <td><textarea name="note" rows="3" cols="30"></textarea></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Gửi">
+        <input type="reset" value="Nhập lại">
+      </td>
+    </tr>
+  </table>
+</form>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
