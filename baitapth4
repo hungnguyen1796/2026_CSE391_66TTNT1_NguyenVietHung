@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bài tập 04</title>
+</head>
+
+<body>
+<h3>BÀI TẬP 04 – FORM</h3>
+
+<form action="#" method="post">
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <td>Họ và tên</td>
+      <td><input type="text" name="fullname"></td>
+    </tr>
+
+    <tr>
+      <td>Email</td>
+      <td><input type="email" name="email"></td>
+    </tr>
+
+    <tr>
+      <td>Mật khẩu</td>
+      <td><input type="password" name="password"></td>
+    </tr>
+
+    <tr>
+      <td>Giới tính</td>
+      <td>
+        <input type="radio" name="gender" value="Nam"> Nam
+        <input type="radio" name="gender" value="Nữ"> Nữ
+      </td>
+    </tr>
+
+    <tr>
+      <td>Sở thích</td>
+      <td>
+        <input type="checkbox" name="hobby" value="Code"> Code
+        <input type="checkbox" name="hobby" value="Game"> Game
+        <input type="checkbox" name="hobby" value="Music"> Music
+      </td>
+    </tr>
+
+    <tr>
+      <td>Quê quán</td>
+      <td>
+        <select name="city">
+          <option>Hà Nội</option>
+          <option>TP.HCM</option>
+          <option>Đà Nẵng</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Ghi chú</td>
+      <td><textarea name="note" rows="3" cols="30"></textarea></td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="center">
+        <input type="submit" value="Gửi">
+        <input type="reset" value="Nhập lại">
+      </td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>
